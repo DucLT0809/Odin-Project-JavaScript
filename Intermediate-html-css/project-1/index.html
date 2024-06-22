@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset-css.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SignUp Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- left side -->
+      <div class="container-left">
+        <!-- logo -->
+        <div class="logo-container">
+          <div class="page-logo">
+            <img src="assets/images/odin-lined.png" alt="odin logo" />
+            <p>ODIN</p>
+          </div>
+        </div>
+        <!-- credit -->
+        <div class="page-credit">
+          <p>
+            Photo by
+            <a
+              href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+              target="_blank"
+              >Halie West</a
+            >
+            on <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </p>
+        </div>
+      </div>
+      <!-- right side -->
+      <div class="container-right">
+        <!-- top section -->
+        <div class="top-section">
+          <h1>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.<br />
+            Sign up now to get started.<br />
+            <br />
+            You know you want to.
+          </h1>
+        </div>
+        <!-- middle section -->
+        <div class="mid-section">
+          <h2>Let's do this!</h2>
+
+          <form action="#">
+            <div class="form-container">
+              <div class="form-left-section">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" required />
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" required />
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" required />
+              </div>
+              <div class="form-right-section">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" required />
+                <label for="number">PHONE NUMBER</label>
+                <input
+                  type="number"
+                  id="number"
+                  minlength="10"
+                  maxlength="10"
+                  required
+                />
+                <label for="cf-password">CONFIRM PASSWORD</label>
+                <input type="password" id="cf-password" required />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- bottom section -->
+        <div class="bottom-section">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a>Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
