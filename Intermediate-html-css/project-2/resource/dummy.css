@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  flex: 7;
+  flex-direction: row;
+  background-color: #e2e8f0;
+}
+/* TODO: left side */
+.content-left {
+  display: flex;
+  flex: 3;
+  background-color: rgb(98, 214, 214);
+}
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  background-color: azure;
+}
+/* TODO: right side */
+.content-right {
+  display: flex;
+  flex: 1;
+  background-color: aquamarine;
+}
