@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  --mainColor: #0891b2;
+  --secondColor: #ffffff;
+  font-family: roboto, idk, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+@font-face {
+  font-family: roboto;
+  src: url(assets/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: idk;
+  src: url(assets/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+/* ============================================= container ============================= */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+/* ============================================= header ============================= */
+header {
+  height: 30rem;
+}
+.profile {
+  justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* TODO: header background */
+.header-background {
+  background-color: #3a98b9;
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform-origin: left;
+  transform: skewY(-13deg);
+  z-index: -1;
+}
+/* TODO: profile image with name */
+.profile-image {
+  position: relative;
+  font-family: idk;
+  height: 100%;
+}
+.profile-image img {
+  margin: 5em 0 5em 5em;
+  width: 20em;
+  display: block;
+  height: 20em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
+}
+.profile-name {
+  position: absolute;
+  left: 150px;
+  bottom: 90px;
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.profile-image h4 {
+  text-shadow: 2px 2px #31484e;
+  margin: 0;
+}
+/* TODO: about section */
+.about {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--secondColor);
+  overflow: hidden;
+  align-self: center;
+  text-overflow: ellipsis;
+  height: 15em;
+  margin-right: 3%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
+}
+.about p,
+.about h3 {
+  padding-left: 3%;
+  font-size: large;
+}
+.icon-group {
+  display: flex;
+  flex: 1;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+#icon {
+  padding: 1%;
+  font-size: xx-large;
+}
+/* ============================================= main ============================= */
+main {
+  display: flex;
+  flex: 1;
+  background-color: red;
+}
+/* TODO: grid 3x3 layout */
+/* ============================================= footer ============================= */
+footer {
+  background-color: var(--mainColor);
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 4% 4% 0 4%;
+  height: 30rem;
+  color: white;
+  font-family: roboto;
+  font-size: x-large;
+}
+/* TODO: contact section */
+.contact {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}
+/* TODO: image section */
+footer img {
+  width: 50%;
+  height: 90%;
+}
+.contact .icon-group {
+  display: flex;
+  flex: 1;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  align-items: flex-end;
+  color: black;
+  justify-content: end;
+}
