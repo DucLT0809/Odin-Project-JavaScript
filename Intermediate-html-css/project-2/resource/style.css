@@ -110,13 +110,13 @@ button {
 .search-group i {
   margin-right: 1em;
 }
-.profile-group i {
+.profile-container-group i {
   margin-right: 1em;
 }
-.profile-group img {
+.profile-container-group img {
   margin-right: 1em;
 }
-.profile-group {
+.profile-container-group {
   display: flex;
   margin: 1em;
   flex: 0;

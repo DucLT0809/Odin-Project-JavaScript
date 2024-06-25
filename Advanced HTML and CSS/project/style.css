@@ -267,7 +267,7 @@ footer img {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -275,16 +275,42 @@ footer img {
     padding: 4%;
     gap: 2%;
     row-gap: 4%;
+    margin-top: 50%;
+  }
+  .card-content {
+    width: 18rem;
+  }
+  footer {
+    padding: 3%;
+    margin-top: 20%;
+  }
+  .contact .icon-group {
+    margin-top: 2%;
+  }
+  .profile {
+    display: flex;
+    flex-direction: unset;
+  }
+  .profile-image {
+    z-index: 2;
+  }
+  .about {
+    position: relative;
+    top: 30%;
+    right: 20%;
+    z-index: 1;
+  }
+  .about h3 {
+    position: relative;
+    left: 45%;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  .card {
     width: 100%;
-    padding: 4%;
-    gap: 2%;
-    row-gap: 4%;
+  }
+  .card-content {
+    width: 100%;
   }
 }
