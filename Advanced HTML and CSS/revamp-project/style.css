@@ -1,0 +1,122 @@
+/* TODO: general */
+
+@font-face {
+  font-family: roboto;
+  src: url(assets/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: idk;
+  src: url(assets/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  --mainColor: #0891b2;
+  --secondColor: #ffffff;
+  font-family: roboto, idk, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+h3 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+p {
+  font-size: large;
+}
+/* TODO: container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+}
+/* ================================================================================== */
+
+/* TODO: header */
+header {
+  flex: 1;
+}
+.skew-background {
+  background-color: #3a98b9;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform-origin: left;
+  transform: skewY(-13deg);
+  z-index: -1;
+}
+.profile-container {
+  display: flex;
+  padding: 5%;
+}
+.profile-container img {
+  max-width: 35%;
+  max-height: 45%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
+}
+
+.profile-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: 30rem;
+  height: 15em;
+  padding: 2%;
+  align-self: center;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
+}
+.profile-about p {
+  min-height: 5rem;
+}
+.about-icon {
+  align-self: flex-end;
+  padding: 2%;
+  font-size: 2em;
+}
+/* ================================================================================== */
+
+/* TODO: body */
+main {
+  flex: 2;
+}
+/* ================================================================================== */
+
+/* TODO: footer */
+footer {
+  flex: 1;
+}
+/* ================================================================================== */
+/* TODO: media query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  .skew-background {
+    max-height: 25rem;
+    max-width: 100%;
+  }
+  .profile-about {
+    clear: both;
+  }
+  .profile-container img {
+    float: left;
+    position: absolute;
+    max-width: 35%;
+    max-height: 35%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
+  }
+  .profile-container {
+    position: relative;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}

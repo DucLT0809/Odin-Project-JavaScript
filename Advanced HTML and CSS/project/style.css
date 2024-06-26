@@ -23,16 +23,19 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
 }
 /* ============================================= header ============================= */
 header {
   height: 30rem;
+  box-sizing: border-box;
 }
 .profile {
   justify-content: center;
   height: 100%;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
 /* TODO: header background */
 .header-background {
@@ -76,10 +79,7 @@ header {
   flex: 1;
   flex-direction: column;
   background-color: var(--secondColor);
-  overflow: hidden;
   align-self: center;
-  text-overflow: ellipsis;
-  height: 15em;
   margin-right: 3%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
 }
@@ -105,13 +105,14 @@ header {
 main {
   display: flex;
   flex: 1;
+  margin: 5% 0 5% 0;
 }
 /* TODO: grid 3x3 layout */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   width: 100%;
-  padding: 5%;
+  padding: 4%;
   gap: 2%;
   row-gap: 4%;
 }
@@ -128,6 +129,7 @@ main {
   width: fit-content;
   display: flex;
   flex: 1;
+  width: 100%;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
@@ -184,7 +186,6 @@ footer {
   flex: 1;
   flex-direction: row;
   padding: 4% 4% 0 4%;
-  height: 30rem;
   color: white;
   font-family: idk;
   font-size: x-large;
@@ -206,4 +207,110 @@ footer img {
   justify-content: flex-start;
   margin: 2% 0 0 0;
   padding: 0;
+}
+/* ============================================= media query ============================= */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    padding: 4%;
+    gap: 2%;
+    row-gap: 4%;
+    margin-top: 40%;
+  }
+
+  .card-content {
+    width: 22rem;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile-image {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  .about {
+    flex: 1;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  footer {
+    flex-direction: column;
+    margin-top: 110%;
+  }
+  .profile-image img {
+    margin: 0;
+    padding: 3em 0 3em 3.5em;
+    width: 20em;
+    display: block;
+    height: 20em;
+    box-shadow: none;
+  }
+  .profile-name {
+    position: absolute;
+    left: 25%;
+    bottom: 14%;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  footer img {
+    width: auto;
+    height: 95%;
+  }
+  .contact {
+    height: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    padding: 4%;
+    gap: 2%;
+    row-gap: 4%;
+    margin-top: 50%;
+  }
+  .card-content {
+    width: 18rem;
+  }
+  footer {
+    padding: 3%;
+    margin-top: 20%;
+  }
+  .contact .icon-group {
+    margin-top: 2%;
+  }
+  .profile {
+    display: flex;
+    flex-direction: unset;
+  }
+  .profile-image {
+    z-index: 2;
+  }
+  .about {
+    position: relative;
+    top: 30%;
+    right: 20%;
+    z-index: 1;
+  }
+  .about h3 {
+    position: relative;
+    left: 45%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 100%;
+  }
+  .card-content {
+    width: 100%;
+  }
 }

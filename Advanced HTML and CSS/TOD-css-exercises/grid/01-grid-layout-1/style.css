@@ -25,7 +25,7 @@ html {
 }
 
 .sidebar {
-  background-color: #005B94;
+  background-color: #005b94;
 }
 
 .nav {
@@ -33,7 +33,7 @@ html {
 }
 
 .article {
-  background-color: #7E1DC3;
+  background-color: #7e1dc3;
 }
 
 .footer {
@@ -45,4 +45,33 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+/* new code */
+.header {
+  grid-area: head;
+}
+.sidebar {
+  grid-area: side;
+}
+.nav {
+  grid-area: nav;
+}
+.footer {
+  grid-area: foot;
+}
+.article {
+  grid-area: a;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "head head head head head head"
+    "side nav nav nav nav nav "
+    "side a a a a a "
+    "side a a a a a "
+    "side a a a a a "
+    "foot foot foot foot foot foot";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
 }
