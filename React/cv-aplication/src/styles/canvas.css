@@ -1,0 +1,22 @@
+.canvas__right {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+.canvas__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.canvas__left__avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50rem;
+  object-fit: cover;
+}
+.canvas__left__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
