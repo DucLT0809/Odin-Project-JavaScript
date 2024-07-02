@@ -16,8 +16,8 @@ const Main = () => {
   const [from, setFrom] = useState();
   const [to, setTo] = useState();
   const [data, setData] = useState();
+  const [currDate, setCurrentDate] = useState(new Date());
   // function
-
   const submitData = () => {
     const data = {
       name: fullName,
@@ -88,6 +88,7 @@ const Main = () => {
             name="schoolDate"
             id="schoolDate"
             value={schoolDate}
+            onKeyDown={(e) => e.preventDefault()}
             onChange={(event) => setSchoolDate(event.target.value)}
           />
         </div>
@@ -146,7 +147,7 @@ const Main = () => {
         </div>
       </div>
       <div className="canvas">
-        <Canvas />
+        <Canvas data={data} />
       </div>
     </div>
   );
